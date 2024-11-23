@@ -24,6 +24,7 @@ module.exports = {
 		'no-invalid-double-slash-comments': null,
 		// 指定规则前需要空行
 		'rule-empty-line-before': null,
+		'selector-class-pattern': null,
 	},
 
 	// 忽略检查的文件或文件夹
