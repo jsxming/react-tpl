@@ -1,5 +1,6 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
+import './style/reset.less';
 import './index.css';
 import App from './App.tsx';
 import {Routes, Route} from 'react-router';
