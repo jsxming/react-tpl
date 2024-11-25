@@ -6,12 +6,14 @@ import App from './App.tsx';
 import {Routes, Route} from 'react-router';
 import {BrowserRouter} from 'react-router';
 import Demo from '@/page/demo';
+import AntdForm from '@/page/antdForm';
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Routes>
 				<Route index element={<App />} />
 				<Route path='demo' element={<Demo />} />
+				<Route path='form' element={<AntdForm />} />
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>,
