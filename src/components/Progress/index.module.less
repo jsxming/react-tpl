@@ -2,19 +2,21 @@
   position: relative;
   height: 18px;
   line-height: 18px;
-  border: 1px solid;
-  .progressChild {
+  .progressBg {
     position: absolute;
-    width: 100;
-    height: 100px;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ccc;
+    transition: all 0.25s;
   }
   .progressValue {
     position: absolute;
     left: 0;
-    z-index: -1;
     width: 1%;
     height: 100%;
     background-color: red;
+    transition: all 0.25s;
   }
   .progressStep {
     width: auto;
@@ -22,18 +24,28 @@
     text-align: center;
     > div {
       position: absolute;
+      top: 50%;
+      left: 50%;
       display: inline-block;
       width: 30px;
       height: 30px;
-      color: #fff;
       line-height: 30px;
       background-color: green;
       border-radius: 50%;
+      transform: translateY(-50%);
+      transition: all 0.25s;
     }
     &::after {
       display: table;
       clear: both;
       content: '';
+    }
+    .text {
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      line-height: 18px;
+      transform: translateX(-50%);
     }
   }
 }
