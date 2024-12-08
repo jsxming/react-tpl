@@ -15,3 +15,8 @@ import Logo from './logo.svg?react';
 ```css
 @import url('@/style/themes/index.less');
 ```
+
+### 使用lodash-es 可以使用treeShaking功能
+
+如果使用lodash 则会把所有的lodash方法都引入进来,增加js体积。
+所以在选择第三方库时，要尽可能使用 ESM 版本，可以提升不少性能！
