@@ -9,3 +9,9 @@
 import Logo from './logo.svg?react';
 <Logo />;
 ```
+
+### css变量引入使用绝对路径
+
+```css
+@import url('@/style/themes/index.less');
+```

@@ -1,10 +1,4 @@
-import Progress from '@/components/Progress';
 function Demo() {
-	return (
-		<div>
-			Demo
-			<Progress />
-		</div>
-	);
+  return <div>Demo</div>;
 }
 export default Demo;
