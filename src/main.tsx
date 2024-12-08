@@ -1,18 +1,13 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
-import {Routes, Route, HashRouter} from 'react-router';
-import Demo from '@/page/demo';
+import {createHashRouter, RouterProvider} from 'react-router';
 import './style/reset.less';
 import './style/themes/index.less';
+import routes from './routes/config.tsx';
+const router = createHashRouter(routes);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route index element={<App />} />
-        <Route path='demo' element={<Demo />} />
-      </Routes>
-    </HashRouter>
+    <RouterProvider router={router} />
   </StrictMode>,
 );
